@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruity Facts - The Facts of fruits</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row bg-light">
+        <div class="col-md-9 offset-md-3 p-3 text-center">
+          <h1>Fruity Facts</h1>
+          <p class="mb-0">The facts and nutrition value of the fruits</p>
+          </div>
+        </header>
+
+        <div class="row">
+        <aside class="col-md-3 menu bg-light d-flex  justify-content-end">
+          <div class="aside-filter p-3 pt-0">
+            <div class="sticky-top">
+          <h4 class="mb-4">Filter</h4>
+          <nav class="nav flex-column text-end filter-fruit-nav">
+            <!-- Family -->
+            <div class="form-floating mb-3">
+              <select class="form-select" id="family" aria-label="Floating label select example">
+                <option selected value="default">Select Family</option>
+                <option value="actinidiaceae">Actinidiaceae</option><option value="anacardiaceae">Anacardiaceae</option><option value="bromeliaceae">Bromeliaceae</option><option value="caricaceae">Caricaceae</option><option value="cucurbitaceae">Cucurbitaceae</option><option value="ebenaceae">Ebenaceae</option><option value="ericaceae">Ericaceae</option><option value="grossulariaceae">Grossulariaceae</option><option value="malvaceae">Malvaceae</option><option value="moraceae">Moraceae</option><option value="musaceae">Musaceae</option><option value="myrtaceae">Myrtaceae</option><option value="passifloraceae">Passifloraceae</option><option value="rosaceae">Rosaceae</option><option value="rutaceae">Rutaceae</option><option value="sapindaceae">Sapindaceae</option><option value="solanaceae">Solanaceae</option><option value="vitaceae">Vitaceae</option>
+              </select>
+              <label for="family">Family</label>
+            </div>
+            
+            <!-- Order -->
+            <div class="form-floating mb-3">
+              <select class="form-select" id="order" aria-label="Floating label select example">
+                <option selected value="default">Select Order</option>
+                <option value="0">0</option><option value="caricacea">Caricacea</option><option value="cucurbitaceae">Cucurbitaceae</option><option value="cucurbitales">Cucurbitales</option><option value="ericales">Ericales</option><option value="malpighiales">Malpighiales</option><option value="malvales">Malvales</option><option value="myrtales">Myrtales</option><option value="none">None</option><option value="poales">Poales</option><option value="rosaceae">Rosaceae</option><option value="rosales">Rosales</option><option value="sapindales">Sapindales</option><option value="saxifragales">Saxifragales</option><option value="solanales">Solanales</option><option value="struthioniformes">Struthioniformes</option><option value="vitales">Vitales</option><option value="zingiberales">Zingiberales</option>
+              </select>
+              <label for="order">Order</label>
+            </div>
+
+            <!-- Genus -->
+            <div class="form-floating mb-3">
+              <select class="form-select" id="genus" aria-label="Floating label select example">
+                <option selected value="default">Select Genus</option>
+                <option value="ananas">Ananas</option><option value="apteryx">Apteryx</option><option value="carica">Carica</option><option value="citrullus">Citrullus</option><option value="citrus">Citrus</option><option value="cucumis">Cucumis</option><option value="diospyros">Diospyros</option><option value="durio">Durio</option><option value="ficus">Ficus</option><option value="fragaria">Fragaria</option><option value="litchi">Litchi</option><option value="malus">Malus</option><option value="mangifera">Mangifera</option><option value="musa">Musa</option><option value="passiflora">Passiflora</option><option value="prunus">Prunus</option><option value="psidium">Psidium</option><option value="pyrus">Pyrus</option><option value="ribes">Ribes</option><option value="rubus">Rubus</option><option value="solanum">Solanum</option><option value="spondias">Spondias</option><option value="vaccinium">Vaccinium</option><option value="vitis">Vitis</option>
+              </select>
+              <label for="genus">Genus</label>
+            </div>
+          </nav>
+            <button class="btn btn-primary w-100 clear-filter" type="button">Clear Filter</button>
+          </div>
+        </div>
+        </aside>
+
+        <main class="col-md-9 p-4">
+          <div class="row row-cols-md-3 g-4 fruit-list">
+          </div>
+        </main>
+        </div>
+        
+        <footer class="row bg-light">
+          <div class="col-md-9 offset-md-3 p-3 text-center">
+
+            &copy;
+            <a href="https://www.linkedin.com/in/hridoybanik/" target="blank">Hridoy</a>,
+            2022 | All rights reserved
+          </div>
+          </footer>
+      </div>
+    </div>
+    <!-- script -->
+    <script defer src="js/apiResponse.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
